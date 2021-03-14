@@ -1,0 +1,85 @@
+body, html {
+  margin: 0;
+}
+
+.frame {
+  width: 800px;
+  height: 600px;
+  position: relative;
+}
+
+.frame *, .frame *::before, .frame *::after {
+  position: absolute;
+  content: '';
+}
+
+.frame *,
+.frame *::before,
+.frame *::after {
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.viking {
+  top: 168px;
+  left: 354px;
+  width: 60px;
+  height: 160px;
+  transform-origin: bottom center;
+  border-radius: 0px 0px 0px 0px;
+  transform: rotate(17deg);
+}
+
+.viking::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-17deg, #cb9a4d 30%, #86652c 0%);
+  border-radius: 30px 30px 30px 30px;
+}
+
+.viking::after {
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 95px;
+  background: #87652e;
+  border-radius: 30px 30px 49px 0px;
+  z-index: -1;
+}
+
+.vikink__shoulderLeft {
+  top: 0px;
+  left: -67px;
+  width: 65px;
+  height: 150px;
+  background: #efae82;
+  border-radius: 99em;
+  transform-origin: top center;
+  transform: rotate(-7deg);
+}
+
+.vikink__armLeft {
+  top: 84px;
+  left: 0;
+  width: 65px;
+  height: 120px;
+  background: #efae82;
+  border-radius: 99em;
+  transform-origin: 33px 33px;
+  transform: rotate(-2deg);
+}
+
+.vikink__shoulderLeft::after {
+  top: -12px;
+  left: -23px;
+  width: 114px;
+  height: 114px;
+  background: radial-gradient(circle at 44% 43%, #f2f7fb 13%, transparent 0%), radial-gradient(#d7dfe7 30%, #c3cbd3 30%, #c3cbd3 42%, transparent 0%), linear-gradient(6deg, #d7dfe7 75%, transparent 0%), linear-gradient(-84deg, #d7dfe3 80%, transparent 0%);
+  border-radius: 50%;
+}
