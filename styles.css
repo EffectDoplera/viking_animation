@@ -83,3 +83,118 @@ body, html {
   background: radial-gradient(circle at 44% 43%, #f2f7fb 13%, transparent 0%), radial-gradient(#d7dfe7 30%, #c3cbd3 30%, #c3cbd3 42%, transparent 0%), linear-gradient(6deg, #d7dfe7 75%, transparent 0%), linear-gradient(-84deg, #d7dfe3 80%, transparent 0%);
   border-radius: 50%;
 }
+
+.vikink__handLeft {
+  top: 122px;
+  left: 67px;
+  width: 17px;
+  height: 38px;
+  background: #e7a26d;
+  border-radius: 0px 13px 0px 0px;
+}
+
+.vikink__handLeft::before {
+  top: 0;
+  left: -17px;
+  width: 26px;
+  height: 60px;
+  background: #efae82;
+  border-radius: 99em;
+}
+
+.vikink__handLeft::after {
+  top: -14px;
+  left: -77px;
+  width: 84px;
+  height: 74px;
+  background: #efae82;
+  border-radius: 18px 17px 42px 43px / 30px 25px 32px 42px;
+}
+
+.viking__axe {
+  top: 20px;
+  left: -89px;
+  width: 154px;
+  height: 20px;
+  background: #9a6120;
+  border-radius: 10px 4px 4px 10px;
+}
+
+.viking__axe::before {
+  top: -18px;
+  left: 110px;
+  width: 33px;
+  height: 59px;
+  background: #c3ccd3;
+  border-radius: 14px 14px 3px 4px / 30px 30px 23px 20px;
+}
+
+.viking__axe>div {
+  top: 0px;
+  left: 56px;
+  width: 77px;
+  height: 30px;
+  background: radial-gradient(circle at 140% 30%, transparent 50%, #c2cbd3 0%) 49px 0 / 25px 30px no-repeat, radial-gradient(circle at 8% 1%, transparent 40%, #c2cbd3 0%) 7px 1px / 50px 30px no-repeat;
+  border-radius: 50%;
+  border: 20px solid transparent;
+  border-bottom-color: #d7dfe3;
+  transform: rotate(7deg);
+}
+
+.viking__axe>div::before {
+  top: -36px;
+  left: 44px;
+  width: 7px;
+  height: 46px;
+  background: #5d4520;
+  border-radius: 99em;
+  transform: rotate(43deg);
+}
+
+.viking__axe>div::after {
+  top: -36px;
+  left: 44px;
+  width: 7px;
+  height: 46px;
+  background: #5d4520;
+  border-radius: 99em;
+  transform: rotate(-59deg);
+}
+
+.vikink__armLeft::after {
+  top: 78px;
+  left: -7px;
+  width: 78px;
+  height: 33px;
+  background: #87652f;
+  border-radius: 6px;
+}
+
+.vikink__armLeft::before {
+  top: 41px;
+  left: -15px;
+  width: 42px;
+  height: 23px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: #e38c2f;
+  filter: drop-shadow(0px 8px #e38c2f);
+}
+
+.ground {
+  top: 550px;
+  left: 0;
+  width: 800px;
+  height: 50px;
+  background: #d4ba9a;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.forest {
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 550px;
+  background: rgb(252 235 213);
+  border-radius: 0px 0px 0px 0px;
+}
