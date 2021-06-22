@@ -1,0 +1,49 @@
+.viking__axe {
+  top: 20px;
+  left: -89px;
+  width: 154px;
+  height: 20px;
+  background: #9a6120;
+  border-radius: 10px 4px 4px 10px;
+}
+
+.viking__axe::before {
+  top: -18px;
+  left: 110px;
+  width: 33px;
+  height: 59px;
+  background: #c3ccd3;
+  border-radius: 14px 14px 3px 4px / 30px 30px 23px 20px;
+}
+
+.viking__axe>div {
+  top: 0px;
+  left: 56px;
+  width: 77px;
+  height: 30px;
+  background: radial-gradient(circle at 140% 30%, transparent 50%, #c2cbd3 0%) 49px 0 / 25px 30px no-repeat, radial-gradient(circle at 8% 1%, transparent 40%, #c2cbd3 0%) 7px 1px / 50px 30px no-repeat;
+  border-radius: 50%;
+  border: 20px solid transparent;
+  border-bottom-color: #d7dfe3;
+  transform: rotate(7deg);
+}
+
+.viking__axe>div::before {
+  top: -36px;
+  left: 44px;
+  width: 7px;
+  height: 46px;
+  background: #5d4520;
+  border-radius: 99em;
+  transform: rotate(43deg);
+}
+
+.viking__axe>div::after {
+  top: -36px;
+  left: 44px;
+  width: 7px;
+  height: 46px;
+  background: #5d4520;
+  border-radius: 99em;
+  transform: rotate(-59deg);
+}

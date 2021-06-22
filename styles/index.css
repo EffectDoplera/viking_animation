@@ -1,46 +1,6 @@
-body, html {
-  margin: 0;
-}
-
-.frame {
-  width: 800px;
-  height: 600px;
-  position: relative;
-}
-
-.frame *, .frame *::before, .frame *::after {
-  position: absolute;
-  content: '';
-}
-
-.frame *,
-.frame *::before,
-.frame *::after {
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border-radius: 0px 0px 0px 0px;
-}
-
-.ground {
-  top: 550px;
-  left: 0;
-  width: 800px;
-  height: 50px;
-  background: #d4ba9a;
-  border-radius: 0px 0px 0px 0px;
-}
-
-.forest {
-  top: 0;
-  left: 0;
-  width: 800px;
-  height: 550px;
-  background: rgb(252 235 213);
-  border-radius: 0px 0px 0px 0px;
-}
+@import url('root.css');
+@import url('background.css');
+@import url('axe.css');
 
 .viking {
   top: 168px;
@@ -129,56 +89,6 @@ body, html {
   border-radius: 18px 17px 42px 43px / 30px 25px 32px 42px;
 }
 
-.viking__axe {
-  top: 20px;
-  left: -89px;
-  width: 154px;
-  height: 20px;
-  background: #9a6120;
-  border-radius: 10px 4px 4px 10px;
-}
-
-.viking__axe::before {
-  top: -18px;
-  left: 110px;
-  width: 33px;
-  height: 59px;
-  background: #c3ccd3;
-  border-radius: 14px 14px 3px 4px / 30px 30px 23px 20px;
-}
-
-.viking__axe>div {
-  top: 0px;
-  left: 56px;
-  width: 77px;
-  height: 30px;
-  background: radial-gradient(circle at 140% 30%, transparent 50%, #c2cbd3 0%) 49px 0 / 25px 30px no-repeat, radial-gradient(circle at 8% 1%, transparent 40%, #c2cbd3 0%) 7px 1px / 50px 30px no-repeat;
-  border-radius: 50%;
-  border: 20px solid transparent;
-  border-bottom-color: #d7dfe3;
-  transform: rotate(7deg);
-}
-
-.viking__axe>div::before {
-  top: -36px;
-  left: 44px;
-  width: 7px;
-  height: 46px;
-  background: #5d4520;
-  border-radius: 99em;
-  transform: rotate(43deg);
-}
-
-.viking__axe>div::after {
-  top: -36px;
-  left: 44px;
-  width: 7px;
-  height: 46px;
-  background: #5d4520;
-  border-radius: 99em;
-  transform: rotate(-59deg);
-}
-
 .viking__armLeft::after {
   top: 78px;
   left: -7px;
@@ -228,8 +138,9 @@ body, html {
   background: #e7a26c;
   border-radius: 0px 60px 33px 33px;
   transform-origin: 33px 33px;
-  transform: rotate(9deg);
+  transform: translate(-17px, -15px);
   z-index: -1;
+  animation: vikingShoulderLeft var(--animation);
 }
 
 .viking__armRight {
@@ -288,6 +199,7 @@ body, html {
   background: #5c4520;
   transform-origin: top center;
   transform: translate(0px, 0px) rotate(-7deg);
+  animation: vikingFootRight var(--animation)
 }
 
 .viking__footRight::before {
@@ -298,6 +210,7 @@ body, html {
   transform-origin: bottom left;
   background: #5b4520;
   transform: skewY(19deg);
+  animation: vikingBootPartRight var(--animation);
 }
 
 .viking__footRight::after {
@@ -340,6 +253,7 @@ body, html {
   border-radius: 99em;
   transform-origin: 13px 13px;
   transform: translate(-14px, 9px) rotate(-31deg);
+  animation: vikingLegLeft var(--animation);
 }
 
 .viking__shinLeft {
@@ -351,6 +265,7 @@ body, html {
   border-radius: 99em;
   transform-origin: 13px 13px;
   transform: rotate(54deg);
+  animation: vikingShinLeft var(--animation);
 }
 
 .viking__footLeft {
@@ -361,6 +276,7 @@ body, html {
   background: #5c4520;
   transform-origin: top center;
   transform: translate(2px, 0px) rotate(-3deg);
+  animation: vikingFootLeft var(--animation);
 }
 
 .viking__footLeft::before {

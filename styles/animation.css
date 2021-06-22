@@ -1,0 +1,97 @@
+@keyframes viking {
+
+  0%,
+  100% {
+    transform: rotate(17deg);
+  }
+}
+
+@keyframes vikingShoulderRight {
+
+  0%,
+  100% {}
+}
+
+@keyframes vikingArmRight {
+
+  0%,
+  100% {
+    transform: rotate(-73deg);
+  }
+}
+
+@keyframes vikingLegRight {
+
+  0%,
+  100% {
+    transform: translate(-3px, -4px) rotate(-73deg);
+  }
+}
+
+@keyframes vikingShinRight {
+
+  0%,
+  100% {
+    transform: rotate(23deg);
+  }
+}
+
+@keyframes vikingFootRight {
+
+  0%,
+  100% {}
+}
+
+@keyframes vikingBootPartRight {
+
+  0%,
+  100% {}
+}
+
+@keyframes vikingLegLeft {
+
+  0%,
+  100% {}
+}
+
+@keyframes vikingShinLeft {
+
+  0%,
+  100% {}
+}
+
+@keyframes vikingFootLeft {
+
+  0%,
+  100% {}
+}
+
+@keyframes vikingBootPartLeft {
+
+  0%,
+  100% {}
+}
+
+@keyframes vikingHead {
+
+  0%,
+  100% {}
+}
+
+@keyframes vikingBeard {
+
+  0%,
+  100% {}
+}
+
+@keyframes vikingShoulderLeft {
+
+  0%,
+  100% {}
+}
+
+@keyframes vikingArmLeft {
+
+  0%,
+  100% {}
+}

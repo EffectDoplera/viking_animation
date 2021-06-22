@@ -1,0 +1,30 @@
+body,
+html {
+  margin: 0;
+}
+
+.frame {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  background: #fcebd5;
+  --animation: 1s ease infinite;
+}
+
+.frame *,
+.frame *::before,
+.frame *::after {
+  position: absolute;
+  content: '';
+}
+
+.frame *,
+.frame *::before,
+.frame *::after {
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 0px 0px 0px 0px;
+}

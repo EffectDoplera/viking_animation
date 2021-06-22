@@ -1,0 +1,17 @@
+.ground {
+  top: 550px;
+  left: 0;
+  width: 800px;
+  height: 50px;
+  background: #d4ba9a;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.forest {
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 550px;
+  background: rgb(252 235 213);
+  border-radius: 0px 0px 0px 0px;
+}
